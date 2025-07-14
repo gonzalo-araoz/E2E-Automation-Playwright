@@ -44,4 +44,8 @@ POSTALCODE=12345
 
 ```bash
 npm run e2e
-``` 
+```
+
+## Demo de las pruebas
+
+https://github.com/gonzalo-araoz/E2E-Automation-Playwright/assets/playwright-report/data/1cf5043b6119f1cf7e62e91809455316f7a6a2a6.webm 
