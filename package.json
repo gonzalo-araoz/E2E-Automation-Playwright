@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "e2e" : "npx playwright test ./pom/tests/e2e.spec.js"
+    "e2e": "npx playwright test ./pom/tests/e2e.spec.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.49.1",
+    "@playwright/test": "^1.54.1",
     "@types/node": "^22.10.2"
   },
   "dependencies": {
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "playwright": "^1.54.1"
   }
 }
