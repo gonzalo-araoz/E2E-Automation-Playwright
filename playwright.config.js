@@ -27,6 +27,7 @@ module.exports = defineConfig({
     screenshot: "only-on-failure",
     video: "on",
     trace: 'on-first-retry',
+    baseURL: process.env.SAUCEDEMO_URL ?? 'https://www.saucedemo.com/',
   },
 
   /* Configure projects for major browsers */
