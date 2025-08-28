@@ -8,6 +8,18 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+  env:
+      CART_PAGE: ${{ secrets.CART_PAGE }}
+      CHECK_OUT_COMPLETE: ${{ secrets.CHECK_OUT_COMPLETE }}
+      CHECK_OUT_FINISH: ${{ secrets.CHECK_OUT_FINISH }}
+      CHECK_OUT_PI: ${{ secrets.CHECK_OUT_PI }}
+      FIRSTNAME: ${{ secrets.FIRSTNAME }}
+      INVENTORY_PAGE: ${{ secrets.INVENTORY_PAGE }}
+      LASTNAME: ${{ secrets.LASTNAME }}
+      POSTALCODE: ${{ secrets.POSTALCODE }}
+      SAUCEDEMO_URL: ${{ secrets.SAUCEDEMO_URL }}
+      VALID_PASSWORD: ${{ secrets.VALID_PASSWORD }}
+      VALID_USERNAME: ${{ secrets.VALID_USERNAME }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -25,15 +37,3 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-      env:
-          CART_PAGE: ${{ secrets.CART_PAGE }}
-          CHECK_OUT_COMPLETE: ${{ secrets.CHECK_OUT_COMPLETE }}
-          CHECK_OUT_FINISH: ${{ secrets.CHECK_OUT_FINISH }}
-          CHECK_OUT_PI: ${{ secrets.CHECK_OUT_PI }}
-          FIRSTNAME: ${{ secrets.FIRSTNAME }}
-          INVENTORY_PAGE: ${{ secrets.INVENTORY_PAGE }}
-          LASTNAME: ${{ secrets.LASTNAME }}
-          POSTALCODE: ${{ secrets.POSTALCODE }}
-          SAUCEDEMO_URL: ${{ secrets.SAUCEDEMO_URL }}
-          VALID_PASSWORD: ${{ secrets.VALID_PASSWORD }}
-          VALID_USERNAME: ${{ secrets.VALID_USERNAME }}
